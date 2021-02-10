@@ -1,0 +1,36 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, Some(c5d1b9bb-5b35-4532-b895-288e7c2c2529), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[33mwarn[0m] [0m[0mThere may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources to C:\Users\SM\2021_Trading_System\target\scala-2.12\classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\SM\2021_Trading_System\src\main\scala\aia\integration\OrderServiceApi.scala:63:22: fruitless type test: a value of type scala.util.Try[Any] cannot also be a aia.integration.TrackingOrder[0m
+[0m[[0m[33mwarn[0m] [0m[0m        case result: TrackingOrder =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                     ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\SM\2021_Trading_System\src\main\scala\aia\integration\OrderServiceApi.scala:66:22: fruitless type test: a value of type scala.util.Try[Any] cannot also be a aia.integration.NoSuchOrder[0m
+[0m[[0m[33mwarn[0m] [0m[0m        case result: NoSuchOrder =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                     ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\SM\2021_Trading_System\src\main\scala\aia\integration\OrderServiceApi.scala:78:24: fruitless type test: a value of type scala.util.Try[Any] cannot also be a aia.integration.TrackingOrder[0m
+[0m[[0m[33mwarn[0m] [0m[0m          case result: TrackingOrder =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                       ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\SM\2021_Trading_System\src\main\scala\aia\integration\OrderServiceApi.scala:60:43: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: Failure(_), Success(_)[0m
+[0m[[0m[33mwarn[0m] [0m[0m      onComplete(processOrders.ask(item)) {   // onSuccess는 퓨처 결과를 내부 루트에 전달함. 그리고 OrderId를 processOrders 액터에게 보냄[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                          ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\SM\2021_Trading_System\src\main\scala\aia\integration\OrderServiceApi.scala:37:20: The outer reference in this type test cannot be checked at run time.[0m
+[0m[[0m[33mwarn[0m] [0m[0m  final case class Item(name: String, id: Long)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                   ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\SM\2021_Trading_System\src\main\scala\aia\integration\OrderServiceApi.scala:38:20: The outer reference in this type test cannot be checked at run time.[0m
+[0m[[0m[33mwarn[0m] [0m[0m  final case class Order(items: List[Item])[0m
+[0m[[0m[33mwarn[0m] [0m[0m                   ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mthree deprecations (since 2.5.0); re-run with -deprecation for details[0m
+[0m[[0m[33mwarn[0m] [0m[0m7 warnings found[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to C:\Users\SM\2021_Trading_System\target\scala-2.12\test-classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m8 feature warnings; re-run with -feature for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mOrderServiceTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mThe order service[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should return NotFound if the order cannot be found *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Request was rejected (OrderServiceTest.scala:24)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should return the tracking order for an order that was posted *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Request was rejected (OrderServiceTest.scala:37)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m
