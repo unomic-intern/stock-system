@@ -1,0 +1,12 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(69da4a8e-d2d0-4ab1-8b61-f5807ff18eb3), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to C:\Users\SM\2021_Trading_System\target\scala-2.12\classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\SM\2021_Trading_System\src\main\scala\aia\integration\OrderServiceApi.scala:39:20: The outer reference in this type test cannot be checked at run time.[0m
+[0m[[0m[33mwarn[0m] [0m[0m  final case class Item(id: Long, status: String, order: Int)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                   ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\SM\2021_Trading_System\src\main\scala\aia\integration\OrderServiceApi.scala:40:20: The outer reference in this type test cannot be checked at run time.[0m
+[0m[[0m[33mwarn[0m] [0m[0m  final case class Order(items: List[Item])[0m
+[0m[[0m[33mwarn[0m] [0m[0m                   ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Users\SM\2021_Trading_System\target\scala-2.12\classes ...[0m
