@@ -22,7 +22,7 @@ import spray.json._
 //case class UserAdded(person:Person)
 //case class DisplayUser(name:String, age:Int, id:String,timestamp:Long)
 
-case class Calling(UserId:String, Corporation:String, Price:Int)
+case class Calling(UserId:String, Corporname:String, Price:Int)
 case class Buy(Calling:Calling)
 case class Sell(Calling:Calling)
 case class Complete(UserId:String, Result:String)
@@ -40,7 +40,7 @@ object AkkaHttpJson extends App with PersonJsonProtocol with SprayJsonSupport wi
 
   //  implicit val system = ActorSystem(Behaviors.empty, "AkkaHttpJson")
   implicit val system = ActorSystem()
-  val otheractor = system.actorOf(otherActor.props,"otherActor")
+  val otheractor = system.actorOf(CorporManager.props(Vector("Kakao","Samsung","Naver")),"CorporManager")
 
   val route: Route = post {
     pathPrefix("calling" / "buy") {
@@ -49,6 +49,7 @@ object AkkaHttpJson extends App with PersonJsonProtocol with SprayJsonSupport wi
       //api/user 에 post로 정보가 들어온다면 userAdded이벤트를 otherActor에게 보내고 otheractor는 받고
       //display이벤트를 다시 돌려준다 그럼 그 정보를 반환한다
       entity(as[Calling]) { calling: Calling =>
+        println(s"user: ${calling.UserId} cor: ${calling.Corporname} price: ${calling.Price}")
         onSuccess(otheractor.ask(Buy(calling))(5 seconds).mapTo[Complete]) {
           case Complete(userid,result) => println(result);complete(Complete(userid,result))
           //        case _ => complete("something wrong!!!")
@@ -62,7 +63,7 @@ object AkkaHttpJson extends App with PersonJsonProtocol with SprayJsonSupport wi
       //api/user 에 post로 정보가 들어온다면 userAdded이벤트를 otherActor에게 보내고 otheractor는 받고
       //display이벤트를 다시 돌려준다 그럼 그 정보를 반환한다
       entity(as[Calling]) { calling: Calling =>
-        println(s"user: ${calling.UserId} cor: ${calling.Corporation} price: ${calling.Price}")
+        println(s"user: ${calling.UserId} cor: ${calling.Corporname} price: ${calling.Price}")
         onSuccess(otheractor.ask(Sell(calling))(5 seconds).mapTo[Complete]) {
           case Complete(userid,result) => println(result);complete(Complete(userid,result))
           //        case _ => complete("something wrong!!!")

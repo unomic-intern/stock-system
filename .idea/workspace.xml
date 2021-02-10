@@ -2,46 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22e38292-fd01-4e78-ae64-7ccb52ceef4a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/test/project/target/active.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/project/target/config-classes/$0fedf61f4439773a06da$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/project/target/config-classes/$0fedf61f4439773a06da.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/project/target/config-classes/$0fedf61f4439773a06da.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/project/target/config-classes/$7660ba63f208d4c3e85b$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/project/target/config-classes/$7660ba63f208d4c3e85b.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/project/target/config-classes/$7660ba63f208d4c3e85b.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/project/target/config-classes/$9e4d12974adcf7f1f28b$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/project/target/config-classes/$9e4d12974adcf7f1f28b.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/project/target/config-classes/$9e4d12974adcf7f1f28b.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/project/target/config-classes/$cf105dd8a79b2b6f53c7$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/project/target/config-classes/$cf105dd8a79b2b6f53c7.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/project/target/config-classes/$cf105dd8a79b2b6f53c7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/project/target/config-classes/$fa48181d385845506dcb$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/project/target/config-classes/$fa48181d385845506dcb.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/project/target/config-classes/$fa48181d385845506dcb.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/project/target/streams/compile/_global/_global/compileOutputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/test/project/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/project/target/streams/compile/exportedProducts/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/test/project/target/streams/compile/exportedProducts/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/project/target/streams/compile/incOptions/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/test/project/target/streams/compile/incOptions/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/project/target/streams/runtime/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/test/project/target/streams/runtime/dependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/project/target/streams/runtime/exportedProducts/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/test/project/target/streams/runtime/exportedProducts/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/project/target/streams/runtime/fullClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/test/project/target/streams/runtime/fullClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/project/target/streams/runtime/internalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/test/project/target/streams/runtime/internalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/main/scala/com/test1/main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/scala/com/test1/main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/main/scala/com/test1/otherActor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/scala/com/test1/otherActor.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/target/scala-2.13/classes/com/test1/AkkaHttpJson$.class" beforeDir="false" afterPath="$PROJECT_DIR$/test/target/scala-2.13/classes/com/test1/AkkaHttpJson$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/target/scala-2.13/test_2.13-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/test/target/scala-2.13/test_2.13-0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/target/scala-2.13/zinc/inc_compile_2.13.zip" beforeDir="false" afterPath="$PROJECT_DIR$/test/target/scala-2.13/zinc/inc_compile_2.13.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.13/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/test/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.13/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/test/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/target/streams/compile/exportedProductJars/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/test/target/streams/compile/exportedProductJars/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/target/streams/compile/exportedProducts/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/test/target/streams/compile/exportedProducts/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/target/streams/compile/incOptions/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/test/target/streams/compile/incOptions/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/target/streams/compile/packageBin/_global/streams/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/test/target/streams/compile/packageBin/_global/streams/inputs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/target/streams/compile/packageBin/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/test/target/streams/compile/packageBin/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/target/streams/compile/packageBin/_global/streams/output" beforeDir="false" afterPath="$PROJECT_DIR$/test/target/streams/compile/packageBin/_global/streams/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/target/streams/runtime/dependencyClasspathAsJars/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/test/target/streams/runtime/dependencyClasspathAsJars/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/target/streams/runtime/exportedProductJars/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/test/target/streams/runtime/exportedProductJars/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/target/streams/runtime/fullClasspathAsJars/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/test/target/streams/runtime/fullClasspathAsJars/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/target/streams/runtime/internalDependencyAsJars/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/test/target/streams/runtime/internalDependencyAsJars/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

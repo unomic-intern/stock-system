@@ -1,2 +1,60 @@
 [0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = C:\Users\jawoon\jawoon\stock-system\test\target\scala-2.13\classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DisplayUser$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	otherActor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	otherActor$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AkkaHttpJson.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AkkaHttpJson$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Person$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Person.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UserAdded.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UserAdded$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DisplayUser.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AkkaHttpJson$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	otherActor$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PersonJsonProtocol.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DisplayUser$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	otherActor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	otherActor$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AkkaHttpJson.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AkkaHttpJson$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Person$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Person.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UserAdded.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UserAdded$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DisplayUser.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AkkaHttpJson$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	otherActor$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PersonJsonProtocol.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CorporManager.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Corporation.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Sell$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Corporation$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Failure$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Complete.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Buy$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Corporation$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Calling$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CorporManager$Buy$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AkkaHttpJson.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CorporManager$Buy.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AkkaHttpJson$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CorporManager$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Complete$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Buy.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Calling.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Failure$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CorporManager$Sell$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CorporManager$Calling$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CorporManager$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CorporManager$Complete.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CorporManager$Complete$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CorporManager$Calling.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Failure.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CorporManager$Sell.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AkkaHttpJson$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Sell.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PersonJsonProtocol.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: C:\Users\jawoon\jawoon\stock-system\test\target\scala-2.13\classes.bak[0m
