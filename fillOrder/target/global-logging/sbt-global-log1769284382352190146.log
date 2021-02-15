@@ -1,0 +1,18 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(de153846-0802-41c0-b405-7c7ec05e7826), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to C:\scala_test\test\target\scala-2.13\classes ...[0m
+[0m[[0m[31merror[0m] [0m[0mC:\scala_test\test\src\main\scala\com\test1\main.scala:54:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mpost {[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\scala_test\test\src\main\scala\com\test1\main.scala:66:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mpost {[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\scala_test\test\src\main\scala\com\test1\main.scala:77:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mdef createEvent(event: String, nrOfTickets: Int) =[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 3 s, completed 2021. 2. 8 오후 3:54:53[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m
