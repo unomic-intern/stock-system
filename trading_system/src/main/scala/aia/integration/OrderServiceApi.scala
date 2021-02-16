@@ -11,10 +11,9 @@ import spray.json.DefaultJsonProtocol._
 import scala.concurrent.{ExecutionContext, Future}
 
 
-final case class BuyOrder(UserId: String, Corporation: String, Price: Int)
-final case class SellOrder(UserId: String, Corporation: String, Price: Int)
-final case class Item(UserId: String, Corporation: String, Price: Int)
-//final case class Item(UserId: String, Corporation: String, Price: Int)
+final case class BuyOrder(UserId: String, Corporname: String, Price: Int)
+final case class SellOrder(UserId: String, Corporname: String, Price: Int)
+final case class Item(UserId: String, Corporname: String, Price: Int)
 
 // HTTP로부터 주문을 받고 그에 대한 응답을 내보내는 시스템
 class OrderServiceApi (system: ActorSystem, timeout: Timeout, val processOrders: ActorRef)
@@ -33,9 +32,6 @@ trait OrderService{
   // 루트에 맞지 않는 요청은 모두 HTTP 404 Not Found 응답을 받게됨
   // ex) order라는 경로를 사용하거나 DELETE방식을 사용한 요청이 들어올 때 404를 결과로 돌려줌
 
-  //val log = Logging(system.eventStream, "order-service")
-  // 로그를 찍기위한 변수
-
   // formats for unmarshalling and marshalling
   implicit val itemFormat = jsonFormat3(Item)
 
@@ -47,7 +43,7 @@ trait OrderService{
 
         onSuccess(processOrders.ask(order)) {
           case result: TrackingOrder =>
-            complete(Item(result.UserId, result.Corporation, result.Price)) // JSON응답으로 요청 완료
+            complete(Item(result.UserId, result.Corporname, result.Price)) // JSON응답으로 요청 완료
 
           case result =>
             complete(StatusCodes.BadRequest)    // processActor가 다른 유형의 메시지를 돌려주면 BadReqeust상태 코드를 반환함
@@ -63,7 +59,7 @@ trait OrderService{
 
         onSuccess(processOrders.ask(order)) {
           case result: TrackingOrder =>
-            complete(Item(result.UserId, result.Corporation, result.Price)) // JSON응답으로 요청 완료
+            complete(Item(result.UserId, result.Corporname, result.Price)) // JSON응답으로 요청 완료
 
           case result =>
             complete(StatusCodes.BadRequest)    // processActor가 다른 유형의 메시지를 돌려주면 BadReqeust상태 코드를 반환함
@@ -74,16 +70,16 @@ trait OrderService{
 
   def toJSONBuyOrder(item: Item): BuyOrder = {
     val UserId = item.UserId
-    val Corporation = item.Corporation
+    val Corporname = item.Corporname
     val Price = item.Price
-    new BuyOrder(UserId, Corporation, Price)
+    new BuyOrder(UserId, Corporname, Price)
   }
 
   def toJSONSellOrder(item: Item): SellOrder = {
     val UserId = item.UserId
-    val Corporation = item.Corporation
+    val Corporname = item.Corporname
     val Price = item.Price
-    new SellOrder(UserId, Corporation, Price)
+    new SellOrder(UserId, Corporname, Price)
   }
 
 }
