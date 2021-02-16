@@ -23,9 +23,11 @@ object OrderServiceApp extends App with RequestTimeout {
     Props(new ProcessOrders), "process-orders"
   )
 
+  /*
   val theTradingSystem = system.actorOf(
     Props(new TheTradingSystem), "trading-system"
   )
+   */
 
   val api = new OrderServiceApi(system, // OrderServiceApi가 루트를 반환함
     requestTimeout(config),

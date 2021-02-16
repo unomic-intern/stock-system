@@ -6,11 +6,13 @@ scalaVersion := "2.12.13"
 
 libraryDependencies ++= {
   val akkaVersion = "2.5.32"
-  val akkaHttpVersion = "10.0.5"
+  val akkaHttpVersion = "10.2.0"
   val camelVersion    = "2.19.0"
   val activeMQVersion = "5.7.0"
   Seq(
-    "org.scala-lang.modules"  %% "scala-xml"    	                 % "1.0.6",
+    "com.typesafe.akka"       %% "akka-actor"                  % akkaVersion,
+    "com.typesafe.akka"       %% "akka-actor-typed"                  % akkaVersion,
+    "org.scala-lang.modules"  %% "scala-xml"    	                   % "1.0.6",
     "com.typesafe.akka"       %% "akka-camel"                        % akkaVersion,
     "net.liftweb"             %% "lift-json"                         % "3.0.1",
     "com.typesafe.akka"       %% "akka-actor"                        % akkaVersion,
