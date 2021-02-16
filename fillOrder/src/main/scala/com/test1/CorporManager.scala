@@ -4,11 +4,6 @@ import akka.actor.{Actor, ActorLogging, ActorRef, Props}
 import java.util.UUID
 import akka.pattern.ask
 
-//case class Calling(UserId:String, Corporation:String, Price:Int)
-//case class Buy(Calling:Calling)
-//case class Sell(Calling:Calling)
-//case class Complete(UserId:String, Result:String)
-
 
 object CorporManager{
   def props(CorpornameList:Vector[String]):Props = Props(new CorporManager(CorpornameList))

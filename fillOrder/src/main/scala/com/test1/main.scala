@@ -11,10 +11,10 @@ import scala.concurrent.Future
 import akka.pattern.ask
 import akka.util.Timeout
 import akka.actor._
+import akka.event.Logging
 
 import scala.language.postfixOps
 import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport
-
 import spray.json._
 
 //case class Person(name:String, age: Int)
@@ -39,6 +39,8 @@ object AkkaHttpJson extends App with PersonJsonProtocol with SprayJsonSupport wi
 
   //  implicit val system = ActorSystem(Behaviors.empty, "AkkaHttpJson")
   implicit val system = ActorSystem()
+  val log =Logging(system.eventStream,"actorsystemlogging")
+
   val otheractor = system.actorOf(CorporManager.props(Vector("Kakao","Samsung","Naver")),"CorporManager")
 
   val route: Route = post {

@@ -11,6 +11,8 @@ object Corporation{
 
 class Corporation extends Actor with ActorLogging {
   //  val matcher = context.actorOf(Match.props,"Match")
+  import AkkaHttpJson.log
+
   private var buyList = Vector[Calling]()
   private var sellList = Vector[Calling]()
 
@@ -24,12 +26,12 @@ class Corporation extends Actor with ActorLogging {
         sellList = sellList.diff(Seq(matchcalling))
         tradingresponse ! Buy(matchcalling)
         sender() ! Complete(targetcalling.CallingId,targetcalling.UserId,s"Success ${targetcalling.Corporname} Buy")
-        println(s"remove in selllist : ${sellList}")
+        log.info(s"remove in selllist : ${sellList}")
       }
       case None => {
         buyList = (buyList :+ targetcalling).sortBy(_.Price).reverse
         sender() ! Complete(targetcalling.CallingId,targetcalling.UserId,s"Not Yet ${targetcalling.Corporname} Buy")
-        println(s"add in buylist ${buyList}")
+        log.info(s"add in buylist ${buyList}")
       }
     }
   }
