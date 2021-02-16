@@ -5,8 +5,10 @@ import akka.stream.ActorMaterializer
 import akka.http.scaladsl.Http
 import akka.http.scaladsl.model._
 import akka.util.ByteString
+import spray.json.DefaultJsonProtocol
+import scala.concurrent.duration._
 import scala.concurrent.Future
-import scala.util.{ Failure, Success }
+import scala.util.{Failure, Success}
 
 object Panic{
   def props:Props = Props(new Panic)
@@ -29,31 +31,44 @@ class Panic extends Actor with ActorLogging {
   }
 }
 
-class TradingResponse extends Actor with ActorLogging {
-  import akka.pattern.pipe
-  import context.dispatcher
+class TradingResponse extends Actor with DefaultJsonProtocol {
+  implicit val callingFormat = jsonFormat3(Calling)
+  implicit val materializer = ActorMaterializer()
+  import AkkaHttpJson.system.dispatcher
 
-  implicit val executionContext = AkkaHttpJson.system.dispatcher
+  def sendCalling(calling:Calling) = {
 
-  //  override def preStart() = {
-  //    http.singleRequest(HttpRequest(uri = "https://thecocktaildb.com/api/json/v1/1/search.php?f=2"))
-  //      .pipeTo(self)
-  //  }
+    val source = """
+        {
+            "UserId" : """" + calling.UserId + """",
+            "Corporname" : """" + calling.Corporname + """",
+            "Price" : """" + calling.Price + """"
+        }
+        """.stripMargin
+
+    val request = HttpRequest(
+      method = HttpMethods.POST,
+      uri = "http://localhost:5000/calling/buy",
+      //이거 uri 데이지가 endpoint 파시고 그 uri 넣으면 됩니다
+      entity = HttpEntity(
+        ContentTypes.`application/json`,
+        source
+      )
+    )
+
+    val responseFuture: Future[HttpResponse] = Http()(AkkaHttpJson.system).singleRequest(request)
+    val entityFuture: Future[HttpEntity.Strict] = responseFuture.flatMap(response => response.entity.toStrict(2.seconds))
+    entityFuture.map(entity => entity.data.utf8String)
+
+  }
 
   def receive:Receive={
     case Buy(calling) =>
-      Http(AkkaHttpJson.system).singleRequest(HttpRequest(uri = "https://thecocktaildb.com/api/json/v1/1/search.php?f=2")).onComplete{
-        case Success(res) => println(res)
-        case Failure(_)   => sys.error("something wrong")
-      }(executionContext)
+      sendCalling(calling).foreach(println)
     case Sell(calling)=>
-      Http(AkkaHttpJson.system).singleRequest(HttpRequest(uri = "https://thecocktaildb.com/api/json/v1/1/search.php?f=4")).onComplete{
-        case Success(res) => println(res)
-        case Failure(_)   => sys.error("something wrong")
-      }(executionContext)
+      sendCalling(calling).foreach(println)
   }
 }
-
 //class TradingResponse extends Actor with ActorLogging {
 //  import akka.pattern.pipe
 //  import context.dispatcher
