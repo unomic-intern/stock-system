@@ -21,20 +21,27 @@ object CorporManager{
 
 class CorporManager(CorpornameList:Vector[String]) extends Actor with ActorLogging {
   private var CorporNames = CorpornameList
+  val exceptionActor = context.actorOf(Panic.props,"Panic")
   val corporActors:Map[String, ActorRef] = CorporNames.map{Corpor =>
     (Corpor,context.actorOf(Corporation.props,s"${Corpor}"))
   }.toMap
   import com.test1._
   def receive:Receive={
     case Buy(calling) => {
-      println(corporActors)
-      corporActors.getOrElse(calling.Corporname,context.actorOf(Panic.props,"Panic")) forward Buy(calling)
-//      sender() ! Complete(calling.UserId,s"Success ${calling.Corporname} Buy")
+      println(corporActors,"\n : CorporManager")
+      corporActors.getOrElse(calling.Corporname,exceptionActor) forward Buy(calling)
+      //      sender() ! Complete(calling.UserId,s"Success ${calling.Corporname} Buy")
     }
     case Sell(calling) =>{
-      println(corporActors)
-      corporActors.getOrElse(calling.Corporname,context.actorOf(Panic.props,"Panic")) forward Sell(calling)
-//      sender() ! Complete(calling.UserId,s"Success ${calling.Corporname} Sell")
+      println(corporActors,"\n : CorporManager")
+      corporActors.getOrElse(calling.Corporname,exceptionActor) forward Sell(calling)
+      //      sender() ! Complete(calling.UserId,s"Success ${calling.Corporname} Sell")
+    }
+    case Cancle(action:Buy) =>{
+      corporActors.getOrElse(action.Calling.Corporname,exceptionActor) forward Cancle(action)
+    }
+    case Cancle(action:Sell) =>{
+      corporActors.getOrElse(action.Calling.Corporname,exceptionActor) forward Cancle(action)
     }
   }
 

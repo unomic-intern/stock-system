@@ -16,37 +16,37 @@ class Corporation extends Actor with ActorLogging {
 
   val tradingresponse = context.actorOf(TradingResponse.props,"tradingresponse")
 
-  def buyTrading(calling:Calling,operator:Int=>Boolean ) : Unit = {
+  def buyTrading(targetcalling:Calling,operator:Int=>Boolean ) : Unit = {
     sellList.find(x => {
       operator(x.Price)
     }) match {
-      case Some(calling) => {
-        sellList = sellList.diff(Seq(calling))
-        tradingresponse ! Buy(calling)
-        sender() ! Complete(calling.UserId,s"Success ${calling.Corporname} Buy")
+      case Some(matchcalling) => {
+        sellList = sellList.diff(Seq(matchcalling))
+        tradingresponse ! Buy(matchcalling)
+        sender() ! Complete(targetcalling.CallingId,targetcalling.UserId,s"Success ${targetcalling.Corporname} Buy")
         println(s"remove in selllist : ${sellList}")
       }
       case None => {
-        buyList = (buyList :+ calling).sortBy(_.Price).reverse
-        sender() ! Complete(calling.UserId,s"Not Yet ${calling.Corporname} Buy")
+        buyList = (buyList :+ targetcalling).sortBy(_.Price).reverse
+        sender() ! Complete(targetcalling.CallingId,targetcalling.UserId,s"Not Yet ${targetcalling.Corporname} Buy")
         println(s"add in buylist ${buyList}")
       }
     }
   }
 
-  def sellTrading(calling:Calling,operator:Int=>Boolean ) : Unit = {
+  def sellTrading(targetcalling:Calling,operator:Int=>Boolean ) : Unit = {
     buyList.find(x => {
       operator(x.Price)
     }) match {
-      case Some(calling) => {
-        buyList = buyList.diff(Seq(calling))
-        tradingresponse ! Sell(calling)
-        sender() ! Complete(calling.UserId,s"Success ${calling.Corporname} Sell")
+      case Some(matchcalling) => {
+        buyList = buyList.diff(Seq(matchcalling))
+        tradingresponse ! Sell(matchcalling)
+        sender() ! Complete(targetcalling.CallingId,targetcalling.UserId,s"Success ${targetcalling.Corporname} Sell")
         println(s"remove in buylist : ${buyList}")
       }
       case None => {
-        sellList = (sellList :+ calling).sortBy(_.Price)
-        sender() ! Complete(calling.UserId,s"Not Yet ${calling.Corporname} Sell")
+        sellList = (sellList :+ targetcalling).sortBy(_.Price)
+        sender() ! Complete(targetcalling.CallingId,targetcalling.UserId,s"Not Yet ${targetcalling.Corporname} Sell")
         println(s"add in selllist ${sellList}")
       }
     }
@@ -61,6 +61,14 @@ class Corporation extends Actor with ActorLogging {
     case Sell(calling) =>{
       println(s"in ${calling.Corporname}")
       sellTrading(calling,calling.Price.<=)
+    }
+    case Cancle(action:Buy) =>{
+      buyList = buyList.diff(Seq(action.Calling))
+      sender() ! Complete(action.Calling.CallingId,action.Calling.UserId,s"success buy cancle")
+    }
+    case Cancle(action:Sell) =>{
+      sellList = sellList.diff(Seq(action.Calling))
+      sender() ! Complete(action.Calling.CallingId,action.Calling.UserId,s"success sell cancle")
     }
   }
 
