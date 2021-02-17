@@ -38,6 +38,7 @@ class TradingResponse extends Actor with DefaultJsonProtocol {
   implicit val callingFormat = jsonFormat4(Calling)
   implicit val materializer = ActorMaterializer()
   import AkkaHttpJson.system.dispatcher
+  import AkkaHttpJson.log
 
   def sendCalling(calling:Calling,uri:String) = {
 
@@ -68,8 +69,8 @@ class TradingResponse extends Actor with DefaultJsonProtocol {
 
   def receive:Receive={
     case Buy(calling) =>
-      sendCalling(calling,"buy").foreach(println)
+      sendCalling(calling,"buy").foreach(log.info)
     case Sell(calling)=>
-      sendCalling(calling,"sell").foreach(println)
+      sendCalling(calling,"sell").foreach(log.info)
   }
 }

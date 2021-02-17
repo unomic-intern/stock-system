@@ -44,12 +44,12 @@ class Corporation extends Actor with ActorLogging {
         buyList = buyList.diff(Seq(matchcalling))
         tradingresponse ! Sell(matchcalling)
         sender() ! Complete(targetcalling.CallingId,targetcalling.UserId,s"Success ${targetcalling.Corporname} Sell")
-        println(s"remove in buylist : ${buyList}")
+        log.info(s"remove in buylist : ${buyList}")
       }
       case None => {
         sellList = (sellList :+ targetcalling).sortBy(_.Price)
         sender() ! Complete(targetcalling.CallingId,targetcalling.UserId,s"Not Yet ${targetcalling.Corporname} Sell")
-        println(s"add in selllist ${sellList}")
+        log.info(s"add in selllist ${sellList}")
       }
     }
   }
@@ -57,11 +57,11 @@ class Corporation extends Actor with ActorLogging {
 
   def receive:Receive={
     case Buy(calling) => {
-      println(s"in ${calling.Corporname}")
+      log.info(s"in ${calling.Corporname}")
       buyTrading(calling,calling.Price.>=)
     }
     case Sell(calling) =>{
-      println(s"in ${calling.Corporname}")
+      log.info(s"in ${calling.Corporname}")
       sellTrading(calling,calling.Price.<=)
     }
     case Cancle(action:Buy) =>{

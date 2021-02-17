@@ -1,9 +1,5 @@
 package com.test1
-
 import akka.actor.{Actor, ActorLogging, ActorRef, Props}
-import java.util.UUID
-import akka.pattern.ask
-
 
 object CorporManager{
   def props(CorpornameList:Vector[String]):Props = Props(new CorporManager(CorpornameList))
@@ -15,6 +11,8 @@ object CorporManager{
 }
 
 class CorporManager(CorpornameList:Vector[String]) extends Actor with ActorLogging {
+  import AkkaHttpJson.log
+
   private var CorporNames = CorpornameList
   val exceptionActor = context.actorOf(Panic.props,"Panic")
   val corporActors:Map[String, ActorRef] = CorporNames.map{Corpor =>
@@ -23,12 +21,12 @@ class CorporManager(CorpornameList:Vector[String]) extends Actor with ActorLoggi
   import com.test1._
   def receive:Receive={
     case Buy(calling) => {
-      println(corporActors,"\n : CorporManager")
+      log.info(s"${corporActors} : CorporManager")
       corporActors.getOrElse(calling.Corporname,exceptionActor) forward Buy(calling)
       //      sender() ! Complete(calling.UserId,s"Success ${calling.Corporname} Buy")
     }
     case Sell(calling) =>{
-      println(corporActors,"\n : CorporManager")
+      log.info(s"${corporActors} : CorporManager")
       corporActors.getOrElse(calling.Corporname,exceptionActor) forward Sell(calling)
       //      sender() ! Complete(calling.UserId,s"Success ${calling.Corporname} Sell")
     }

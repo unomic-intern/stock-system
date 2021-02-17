@@ -50,7 +50,7 @@ object AkkaHttpJson extends App with PersonJsonProtocol with SprayJsonSupport wi
       //api/user 에 post로 정보가 들어온다면 userAdded이벤트를 otherActor에게 보내고 otheractor는 받고
       //display이벤트를 다시 돌려준다 그럼 그 정보를 반환한다
       entity(as[Calling]) { calling: Calling =>
-        println(s"user: ${calling.UserId} cor: ${calling.Corporname} price: ${calling.Price}")
+        log.info(s"user: ${calling.UserId} cor: ${calling.Corporname} price: ${calling.Price}")
         onSuccess(otheractor.ask(Buy(calling))(5 seconds).mapTo[Complete]) {
           case result:Complete => println(result);complete(result)
           //        case _ => complete("something wrong!!!")
@@ -64,7 +64,7 @@ object AkkaHttpJson extends App with PersonJsonProtocol with SprayJsonSupport wi
       //api/user 에 post로 정보가 들어온다면 userAdded이벤트를 otherActor에게 보내고 otheractor는 받고
       //display이벤트를 다시 돌려준다 그럼 그 정보를 반환한다
       entity(as[Calling]) { calling: Calling =>
-        println(s"user: ${calling.UserId} cor: ${calling.Corporname} price: ${calling.Price}")
+        log.info(s"user: ${calling.UserId} cor: ${calling.Corporname} price: ${calling.Price}")
         onSuccess(otheractor.ask(Sell(calling))(5 seconds).mapTo[Complete]) {
           case result:Complete => println(result);complete(result)
           //        case _ => complete("something wrong!!!")
