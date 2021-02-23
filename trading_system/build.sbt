@@ -1,37 +1,46 @@
-name := "2021_Trading_System"
+
+name := "new_trading"
 
 version := "0.1"
 
-scalaVersion := "2.12.13"
+lazy val app = project in file(".") enablePlugins(Cinnamon)
 
-libraryDependencies ++= {
-  val akkaVersion = "2.5.32"
-  val akkaHttpVersion = "10.2.0"
-  val camelVersion    = "2.19.0"
-  val activeMQVersion = "5.7.0"
-  Seq(
-    "com.typesafe.akka"       %% "akka-actor"                  % akkaVersion,
-    "com.typesafe.akka"       %% "akka-actor-typed"                  % akkaVersion,
-    "org.scala-lang.modules"  %% "scala-xml"    	                   % "1.0.6",
-    "com.typesafe.akka"       %% "akka-camel"                        % akkaVersion,
-    "net.liftweb"             %% "lift-json"                         % "3.0.1",
-    "com.typesafe.akka"       %% "akka-actor"                        % akkaVersion,
-    "com.typesafe.akka"       %% "akka-slf4j"                        % akkaVersion,
-    "com.typesafe.akka"       %% "akka-stream"                       % akkaVersion,
-    "com.typesafe.akka"       %% "akka-http-core"                    % akkaHttpVersion,
-    "com.typesafe.akka"       %% "akka-http"                         % akkaHttpVersion,
-    "com.typesafe.akka"       %% "akka-http-spray-json"              % akkaHttpVersion,
-    "com.typesafe.akka"       %% "akka-http-xml"                     % akkaHttpVersion,
-    "com.typesafe.akka"       %% "akka-http-testkit"                 % akkaHttpVersion     % "test",
-    "ch.qos.logback"          %  "logback-classic"                   % "1.2.3",
-    "commons-io"              %  "commons-io"                        % "2.5"         % "test",
-    "org.apache.camel"        %  "camel-mina"                        % camelVersion 	 % "test",
-    "org.apache.camel"        %  "camel-jms"                         % camelVersion 	 % "test",
-    "org.apache.activemq"     %  "activemq-camel"                    % activeMQVersion % "test",
-    "org.apache.activemq"     %  "activemq-core"                     % activeMQVersion % "test",
-    "org.apache.camel"        %  "camel-jetty"                       % camelVersion 	 % "test",
-    "com.typesafe.akka"       %% "akka-testkit"                      % akkaVersion     % "test",
-    "org.scalatest"           %% "scalatest"                         % "3.0.1"         % "test"
+cinnamonSuppressRepoWarnings := true
 
-  )
-}
+enablePlugins(Cinnamon)
+
+cinnamon in run := true
+cinnamon in test := true
+
+val AkkaVersion = "2.6.5"
+val AkkaHttpVersion = "10.2.0"
+
+scalaVersion := "2.13.4"
+
+libraryDependencies ++= Seq(
+  Cinnamon.library.cinnamonCHMetrics,
+  Cinnamon.library.cinnamonAkka,
+  Cinnamon.library.cinnamonAkkaHttp,
+  Cinnamon.library.cinnamonJvmMetricsProducer,
+
+  Cinnamon.library.cinnamonAkkaTyped,
+
+  Cinnamon.library.cinnamonPrometheus,
+  Cinnamon.library.cinnamonPrometheusHttpServer,
+
+  Cinnamon.library.cinnamonAkkaPersistence,
+  Cinnamon.library.cinnamonAkkaStream,
+  Cinnamon.library.cinnamonAkkaProjection,
+  Cinnamon.library.cinnamonAkkaHttp,
+  Cinnamon.library.cinnamonSlf4jEvents,
+
+  "com.typesafe.akka" %% "akka-actor" % AkkaVersion,
+  "com.typesafe.akka" %% "akka-actor-typed" % AkkaVersion,
+  "com.typesafe.akka" %% "akka-slf4j" % AkkaVersion,
+  "com.typesafe.akka" %% "akka-stream" % AkkaVersion,
+  "com.typesafe.akka" %% "akka-http" % AkkaHttpVersion,
+  "com.typesafe.akka" %% "akka-http-spray-json" % AkkaHttpVersion,
+  "ch.qos.logback" % "logback-classic" % "1.2.3",
+  "com.typesafe.akka" %% "akka-actor-testkit-typed" % AkkaVersion % Test,
+  "org.scalatest" %% "scalatest" % "3.1.0" % Test
+)

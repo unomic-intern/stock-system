@@ -1,55 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22e38292-fd01-4e78-ae64-7ccb52ceef4a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/project/target/config-classes/$22045c52636aab773c94$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/project/target/config-classes/$22045c52636aab773c94.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/project/target/config-classes/$22045c52636aab773c94.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/project/target/config-classes/$59d17725a6e692f63701$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/project/target/config-classes/$59d17725a6e692f63701.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/project/target/config-classes/$59d17725a6e692f63701.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/project/target/config-classes/$5cbb9c4adb2ffc87b1cf$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/project/target/config-classes/$5cbb9c4adb2ffc87b1cf.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/project/target/config-classes/$5cbb9c4adb2ffc87b1cf.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/project/target/config-classes/$96dac0ba56e39ca9544d$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/project/target/config-classes/$96dac0ba56e39ca9544d.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/project/target/config-classes/$96dac0ba56e39ca9544d.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/project/target/config-classes/$9f61de67d06736b6ffb8$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/project/target/config-classes/$9f61de67d06736b6ffb8.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/project/target/config-classes/$9f61de67d06736b6ffb8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/inputs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/project/target/streams/compile/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/project/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/project/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/project/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/project/target/streams/runtime/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/project/target/streams/runtime/dependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/project/target/streams/runtime/fullClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/project/target/streams/runtime/fullClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/project/target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/project/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/src/main/resources/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/src/main/resources/application.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/src/main/scala/com/test1/CorporManager.scala" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/src/main/scala/com/test1/CorporManager.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/src/main/scala/com/test1/Corporation.scala" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/src/main/scala/com/test1/Corporation.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/src/main/scala/com/test1/Failure.scala" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/src/main/scala/com/test1/Failure.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/src/main/scala/com/test1/main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/src/main/scala/com/test1/main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/target/scala-2.13/classes/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/target/scala-2.13/classes/application.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/target/scala-2.13/update/update_cache_2.13/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/target/scala-2.13/update/update_cache_2.13/inputs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/target/scala-2.13/update/update_cache_2.13/output" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/target/scala-2.13/update/update_cache_2.13/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.13/input_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.13/input_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.13/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.13/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/target/streams/compile/compile/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/target/streams/compile/compile/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/target/streams/compile/copyResources/_global/streams/copy-resources" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/target/streams/compile/copyResources/_global/streams/copy-resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/target/streams/compile/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/target/streams/compile/incOptions/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/target/streams/compile/incOptions/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillOrder/target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/fillOrder/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
-    </list>
+    <list default="true" id="22e38292-fd01-4e78-ae64-7ccb52ceef4a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

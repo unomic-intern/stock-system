@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="2021_Trading_System,2021_trading_system_5699" />
+    <profile name="sbt 1" modules="new_trading" />
   </component>
 </project>
