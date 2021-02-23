@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: com.lightbend.cinnamon:cinnamon-akka-projection_2.13:2.15.0:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo.lightbend.com/pass/umnbIaQfPcWnAVwXXDSDu06ztdvV_aRPpjee7rdni_-mtiio/commercial-releases/com/lightbend/cinnamon/cinnamon-akka-projection_2.13/2.15.0/cinnamon-akka-projection_2.13-2.15.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo.lightbend.com/pass/umnbIaQfPcWnAVwXXDSDu06ztdvV_aRPpjee7rdni_-mtiio/commercial-releases/com/lightbend/cinnamon/cinnamon-akka-projection_2.13/2.15.0/cinnamon-akka-projection_2.13-2.15.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

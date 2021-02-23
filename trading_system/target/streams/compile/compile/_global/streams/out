@@ -1,0 +1,10 @@
+[0m[[0m[33mwarn[0m] [0m[0mC:\scala_test\new_trading\src\main\scala\com\newTrading\EndPoint.scala:80:18: non-variable type argument com.newTrading.Buy in type pattern com.newTrading.Cancel[com.newTrading.Buy] is unchecked since it is eliminated by erasure[0m
+[0m[[0m[33mwarn[0m] [0m[0m    case cancel :Cancel[Buy] => {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\scala_test\new_trading\src\main\scala\com\newTrading\EndPoint.scala:85:17: non-variable type argument com.newTrading.Sell in type pattern com.newTrading.Cancel[com.newTrading.Sell] is unchecked since it is eliminated by erasure[0m
+[0m[[0m[33mwarn[0m] [0m[0m    case cancel:Cancel[Sell] => {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\scala_test\new_trading\src\main\scala\com\newTrading\EndPoint.scala:85:33: unreachable code[0m
+[0m[[0m[33mwarn[0m] [0m[0m    case cancel:Cancel[Sell] => {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mthree warnings found[0m
