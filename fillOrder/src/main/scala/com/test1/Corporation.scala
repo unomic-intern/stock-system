@@ -66,11 +66,11 @@ class Corporation extends Actor with ActorLogging {
     }
     case Cancle(action:Buy) =>{
       buyList = buyList.diff(Seq(action.Calling))
-      sender() ! Complete(action.Calling.CallingId,action.Calling.UserId,s"success buy cancle")
+      sender() ! Complete(action.Calling.CallingId,action.Calling.UserId,s"Success Buy cancle")
     }
     case Cancle(action:Sell) =>{
       sellList = sellList.diff(Seq(action.Calling))
-      sender() ! Complete(action.Calling.CallingId,action.Calling.UserId,s"success sell cancle")
+      sender() ! Complete(action.Calling.CallingId,action.Calling.UserId,s"Success Sell cancle")
     }
   }
 
