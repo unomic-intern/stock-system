@@ -1,0 +1,37 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\trading_system\src\test\scala\test\OrderSpec.scala:18:8: not found: type OrderService[0m
+[0m[[0m[31merror[0m] [0m[0m  with OrderService{[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\trading_system\src\test\scala\test\OrderSpec.scala:22:48: not found: type ProcessOrders[0m
+[0m[[0m[31merror[0m] [0m[0m  val processOrders = system.actorOf(Props(new ProcessOrders), "porders")[0m
+[0m[[0m[31merror[0m] [0m[0m                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\trading_system\src\test\scala\test\OrderSpec.scala:38:98: not found: value routes[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/buy", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(routes) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\trading_system\src\test\scala\test\OrderSpec.scala:57:99: not found: value routes[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/sell", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(routes) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\trading_system\src\test\scala\test\OrderSpec.scala:77:98: not found: value routes[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/buy", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(routes) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\trading_system\src\test\scala\test\OrderSpec.scala:96:99: not found: value routes[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/sell", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(routes) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\trading_system\src\test\scala\test\OrderSpec.scala:116:98: not found: value routes[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/buy", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(routes) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\trading_system\src\test\scala\test\OrderSpec.scala:135:99: not found: value routes[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/sell", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(routes) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\trading_system\src\test\scala\test\OrderSpec.scala:155:98: not found: value routes[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/buy", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(routes) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\trading_system\src\test\scala\test\OrderSpec.scala:174:99: not found: value routes[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/sell", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(routes) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\trading_system\src\test\scala\test\OrderSpec.scala:195:97: not found: value routes[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/cancel/buy", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(routes) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\trading_system\src\test\scala\test\OrderSpec.scala:216:98: not found: value routes[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/cancel/sell", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(routes) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m12 errors found[0m

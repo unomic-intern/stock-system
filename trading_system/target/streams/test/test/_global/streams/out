@@ -1,0 +1,25 @@
+[0m[[0m[0mdebug[0m] [0m[0mjavaOptions: Vector(-javaagent:C:\Users\SM\AppData\Local\Coursier\cache\v1\https\repo.lightbend.com\pass\umnbIaQfPcWnAVwXXDSDu06ztdvV_aRPpjee7rdni_-mtiio\commercial-releases\com\lightbend\cinnamon\cinnamon-agent\2.15.0\cinnamon-agent-2.15.0.jar)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForking tests - parallelism = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreate a single-thread test executor[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunner for org.scalatest.tools.Framework produced 1 initial tasks for 1 tests.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(test.OrderSpec, sbt.ForkMain$SubclassFingerscan@de3a06f, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mOrderSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mThe order service[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the tracking order for an BUY order that was posted[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the tracking order for an SELL order that was posted[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return FAIL about BUY order that was posted for an SELL order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return FAIL about SELL order that was posted for an BUY order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return SUCCESS about BUY order that was posted[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return SUCCESS about SELL order that was posted[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return later SUCCESS about BUY order that was posted[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return later SUCCESS about SELL order that was posted[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the cancel order for an BUY order that was posted[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the cancel order for an SELL order that was posted[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 10 events.[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 10 seconds, 116 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 10[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 10, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	test.OrderSpec[0m

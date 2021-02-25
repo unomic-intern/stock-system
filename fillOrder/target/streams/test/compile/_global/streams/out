@@ -1,0 +1,253 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:18:8: not found: type ScalatestRouteTest[0m
+[0m[[0m[31merror[0m] [0m[0m  with ScalatestRouteTest[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:20:8: not found: type Api[0m
+[0m[[0m[31merror[0m] [0m[0m  with Api{[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:22:35: not found: value system[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val executionContext = system.dispatcher[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:24:20: not found: value system[0m
+[0m[[0m[31merror[0m] [0m[0m  val otheractor = system.actorOf(CorporManager.props(Vector("Kakao","Samsung","Naver")),"CorporManager")[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:41:7: not found: value Post[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/buy", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:41:98: not found: value route[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/buy", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:41:108: not found: value check[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/buy", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:42:9: not found: value system[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(responseAs[String])[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:42:25: not found: value responseAs[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(responseAs[String])[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:43:9: not found: value system[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(status.toString())[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:43:25: not found: value status[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(status.toString())[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:44:9: not found: value status[0m
+[0m[[0m[31merror[0m] [0m[0m        status shouldEqual StatusCodes.OK[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:61:7: not found: value Post[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/sell", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:61:99: not found: value route[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/sell", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:61:109: not found: value check[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/sell", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:62:9: not found: value system[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(responseAs[String])[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:62:25: not found: value responseAs[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(responseAs[String])[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:63:9: not found: value system[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(status.toString())[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:63:25: not found: value status[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(status.toString())[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:64:9: not found: value status[0m
+[0m[[0m[31merror[0m] [0m[0m        status shouldEqual StatusCodes.OK[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:82:7: not found: value Post[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/buy", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:82:98: not found: value route[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/buy", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:82:108: not found: value check[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/buy", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:83:9: not found: value system[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(responseAs[String])[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:83:25: not found: value responseAs[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(responseAs[String])[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:84:9: not found: value system[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(status.toString())[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:84:25: not found: value status[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(status.toString())[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:85:9: not found: value status[0m
+[0m[[0m[31merror[0m] [0m[0m        status shouldEqual StatusCodes.OK[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:102:7: not found: value Post[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/sell", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:102:99: not found: value route[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/sell", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:102:109: not found: value check[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/sell", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:103:9: not found: value system[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(responseAs[String])[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:103:25: not found: value responseAs[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(responseAs[String])[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:104:9: not found: value system[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(status.toString())[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:104:25: not found: value status[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(status.toString())[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:105:9: not found: value status[0m
+[0m[[0m[31merror[0m] [0m[0m        status shouldEqual StatusCodes.OK[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:123:7: not found: value Post[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/buy", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:123:98: not found: value route[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/buy", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:123:108: not found: value check[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/buy", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:124:9: not found: value system[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(responseAs[String])[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:124:25: not found: value responseAs[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(responseAs[String])[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:125:9: not found: value system[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(status.toString())[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:125:25: not found: value status[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(status.toString())[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:126:9: not found: value status[0m
+[0m[[0m[31merror[0m] [0m[0m        status shouldEqual StatusCodes.OK[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:143:7: not found: value Post[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/sell", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:143:99: not found: value route[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/sell", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:143:109: not found: value check[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/sell", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:144:9: not found: value system[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(responseAs[String])[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:144:25: not found: value responseAs[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(responseAs[String])[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:145:9: not found: value system[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(status.toString())[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:145:25: not found: value status[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(status.toString())[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:146:9: not found: value status[0m
+[0m[[0m[31merror[0m] [0m[0m        status shouldEqual StatusCodes.OK[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:164:7: not found: value Post[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/buy", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:164:98: not found: value route[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/buy", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:164:108: not found: value check[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/buy", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:165:9: not found: value system[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(responseAs[String])[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:165:25: not found: value responseAs[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(responseAs[String])[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:166:9: not found: value system[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(status.toString())[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:166:25: not found: value status[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(status.toString())[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:167:9: not found: value status[0m
+[0m[[0m[31merror[0m] [0m[0m        status shouldEqual StatusCodes.OK[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:184:7: not found: value Post[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/sell", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:184:99: not found: value route[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/sell", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:184:109: not found: value check[0m
+[0m[[0m[31merror[0m] [0m[0m      Post("/calling/sell", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:185:9: not found: value system[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(responseAs[String])[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:185:25: not found: value responseAs[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(responseAs[String])[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:186:9: not found: value system[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(status.toString())[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:186:25: not found: value status[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(status.toString())[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:187:9: not found: value status[0m
+[0m[[0m[31merror[0m] [0m[0m        status shouldEqual StatusCodes.OK[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:205:7: not found: value Delete[0m
+[0m[[0m[31merror[0m] [0m[0m      Delete("/cancel/buy", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:205:99: not found: value route[0m
+[0m[[0m[31merror[0m] [0m[0m      Delete("/cancel/buy", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:205:109: not found: value check[0m
+[0m[[0m[31merror[0m] [0m[0m      Delete("/cancel/buy", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:206:9: not found: value system[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(responseAs[String])[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:206:25: not found: value responseAs[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(responseAs[String])[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:207:9: not found: value system[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(status.toString())[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:207:25: not found: value status[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(status.toString())[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:208:9: not found: value status[0m
+[0m[[0m[31merror[0m] [0m[0m        status shouldEqual StatusCodes.OK[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:225:7: not found: value Delete[0m
+[0m[[0m[31merror[0m] [0m[0m      Delete("/cancel/sell", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:225:100: not found: value route[0m
+[0m[[0m[31merror[0m] [0m[0m      Delete("/cancel/sell", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:225:110: not found: value check[0m
+[0m[[0m[31merror[0m] [0m[0m      Delete("/cancel/sell", HttpEntity(ContentTypes.`application/json`, jsonOrder)) ~> Route.seal(route) ~> check {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:226:9: not found: value system[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(responseAs[String])[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:226:25: not found: value responseAs[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(responseAs[String])[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:227:9: not found: value system[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(status.toString())[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:227:25: not found: value status[0m
+[0m[[0m[31merror[0m] [0m[0m        system.log.info(status.toString())[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\SM\2021_stock-system-main\fillOrder\src\test\scala\test\SendSpec.scala:228:9: not found: value status[0m
+[0m[[0m[31merror[0m] [0m[0m        status shouldEqual StatusCodes.OK[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m84 errors found[0m
