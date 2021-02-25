@@ -9,6 +9,7 @@ name := "Trading_Server"
 
 version := "0.1"
 
+/*
 lazy val app = project in file(".") enablePlugins(Cinnamon)
 
 cinnamonSuppressRepoWarnings := true
@@ -17,7 +18,7 @@ enablePlugins(Cinnamon)
 
 cinnamon in run := true
 //cinnamon in test := true
-
+*/
 val AkkaVersion = "2.6.5"
 val AkkaHttpVersion = "10.2.0"
 
