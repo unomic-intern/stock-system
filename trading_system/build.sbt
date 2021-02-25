@@ -1,5 +1,11 @@
+enablePlugins(JavaAppPackaging)
+packageName in Docker := "trading_server"
+dockerBaseImage := "openjdk:8-jre-alpine"
 
-name := "new_trading"
+import com.typesafe.sbt.packager.docker._
+dockerCommands ++= Seq(  Cmd("USER", "root"),  ExecCmd("RUN", "apk", "add", "--no-cache", "bash"))
+
+name := "Trading_Server"
 
 version := "0.1"
 
@@ -10,7 +16,7 @@ cinnamonSuppressRepoWarnings := true
 enablePlugins(Cinnamon)
 
 cinnamon in run := true
-cinnamon in test := true
+//cinnamon in test := true
 
 val AkkaVersion = "2.6.5"
 val AkkaHttpVersion = "10.2.0"

@@ -1,4 +1,11 @@
-name := "test"
+enablePlugins(JavaAppPackaging)
+packageName in Docker := "trading_system"
+dockerBaseImage := "openjdk:8-jre-alpine"
+
+import com.typesafe.sbt.packager.docker._
+dockerCommands ++= Seq(  Cmd("USER", "root"),  ExecCmd("RUN", "apk", "add", "--no-cache", "bash"))
+
+name := "Trading_System"
 
 version := "0.1"
 
